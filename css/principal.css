@@ -1,39 +1,125 @@
-*{
-    font-family: "Bebas Neue", sans-serif;
-    margin:0;
-    padding:0;
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC&family=DM+Serif+Display:ital@0;1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.nav-superior{
+
+body {
+    background-color: rgb(138, 20, 20); 
+    font-family: 'DM Serif Display', serif;
+    color: aliceblue;
+}
+
+.bodoni-moda-sc {
+    font-family: 'Bodoni Moda SC', serif;
+    font-weight: 400;
+    font-style: normal;
+    color: aliceblue;
+}
+
+.dm-serif-display-regular {
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+    font-style: normal;
+    color: aliceblue;
+}
+
+.dm-serif-display-regular-italic {
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+    font-style: italic;
+    color: aliceblue;
+}
+
+.nav-superior {
     width: 100%;
-    height: 3rem;
     display: flex;
-    background-color: rgba(218, 15, 15, 0.884);
+    height: 3rem;
+    background-color: rgb(185, 149, 19);
+    font-size: 1.2rem;
 }
 
-#menu-principal{
-    list-style:none;
-    width:100%;
+#menu-principal {
+    list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    color: aliceblue;
-    margin:0;
-    padding:10px;
+    padding: 0 10px;
+    width: 100%;
+    color: white;
 }
 
-h1{
-    font-size: 1.3rem;
-    margin: 20px auto;
+a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: rgb(36, 36, 7);
+}
+
+h1, h2 {
     text-align: center;
 }
 
-.banner{
-    width: 100%;
-    height: 25rem;
-    background-position: center;
-    background-repeat: no-repeat; 
-    background-size: contain; 
-    background-image: url(../img/LanchePNG.png);
+h2 {
+    margin-bottom: 0.2rem;
+}
+
+
+.banner {
+    text-align: center;
+    margin: 1rem auto 0 auto;
+}
+
+.banner img {
+    width: 60%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+}
+
+#container-principal {
+    width: 60%;
+    margin: 3rem auto;
+    height: auto; 
+}
+
+#card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    width: 80%;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    box-sizing: border-box;
+}
+
+.card {
+    flex: 1 1 250px;
+    background-color: rgba(220, 12, 12, 0.1);
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+@media (max-width: 700px) {
+    #container-principal {
+        width: 90%;
+    }
+
+    .nav-superior {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    #menu-principal {
+        flex-direction: column;
+        gap: 40px;
+    }
 }

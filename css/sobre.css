@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #8B0000; 
+    color: #ffffff;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #B22222; 
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+.nav-superior {
+    background-color: #b0840c;
+    padding: 10px 0;
+}
+
+.nav-superior ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-superior a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-superior a:hover {
+    color: #FFD700; 
+}
+
+.banner {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.banner img {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+#container-principal {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+#container-principal p {
+    font-size: 1.2em;
+    font-family: 'Georgia', serif;
+    text-align: justify;
+    background-color: rgba(255, 255, 255, 0.1); 
+    padding: 20px;
+    border-left: 5px solid #FFD700;
+    border-radius: 5px;
+}
+
+
+.dm-serif-display-regular {
+    font-family: 'DM Serif Display', serif;
+}
